@@ -6,7 +6,7 @@ function topFunction() {
 }
 function init() {
 
-    if($(window).width() < 768){
+    if(screen.width < 768){
         window.location.replace("http://xvideos.com");
     }
     var documentEl = $(document)
