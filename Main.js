@@ -7,7 +7,7 @@ function topFunction() {
 function init() {
 
     if(screen.width < 768){
-        window.location.replace("http://xvideos.com");
+        window.location.replace("https://i1.wp.com/www.hadeninteractive.com/wp-content/uploads/2014/01/wip.jpg?resize=425%2C282&ssl=1");
     }
     var documentEl = $(document)
     function initMap() {
