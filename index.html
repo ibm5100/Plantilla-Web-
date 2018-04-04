@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <!-- CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="Main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- JAVASCRIPT -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="Main.js"></script>
+
+  <!--Falta poner la imagen que vaya a ir en el favicon-->
+  <link rel="shortcut icon" type="image/png" href="Imagenes/" />
+  <title>Titulo</title>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-default navbar-fixed-top" id=navbar>
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#opciones" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img src="Imagenes/cubes.svg" id="LogoNavbar"></img>
+        </a>
+        <p class="navbar-text" id="Empresa">EMPRESA</p>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right pr-7" id="opciones">
+          <li>
+            <a href="#">INICIO
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li>
+            <a href="#Servicios">SERVICIOS</a>
+          </li>
+          <li>
+            <a href="#CasosDeExito">RESEÑAS</a>
+          </li>
+          <li>
+            <a href="#PreguntasFrecuentes">F.A.Q</a>
+          </li>
+          <li>
+            <a href="#Contacto">CONTACTO</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid">
+
+    <!-- Banner principal -->
+    <div class="row">
+      <div class="col-md-12 parallax" id=parallax1></div>
+      <div class="home-overlay"></div>
+      <div class="textos">
+        <H2 class="text-center">LOREM</H2>
+        <h3 class="text-center fino">ipsum dolor at</h3>
+      </div>
+      <div class="flecha">
+        <a href="#" id="flecha">
+          <img src="Imagenes/darrow.svg" alt="" class="img-responsive center-block">
+        </a>
+      </div>
+    </div>
+    <!-- ---------------- -->
+
+    <!-- Boton para ir de vuelta al top -->
+    <button onclick="topFunction()" id="topBtn">
+      <i class="	fa fa-white fa-angle-up"></i>
+      <!-- <img src="Imagenes/next.svg" alt="" width=24px height=24px> -->
+    </button>
+    <!-- "---------------------------------" -->
+
+
+    <div class="row" id="Servicios">
+      <div class="col-md-12">
+        <h1 class="text-center">
+          <span class="grueso">SERVICIOS</span>
+        </h1>
+      </div>
+    </div>
+
+    <div class="row " id="textoInformacion">
+
+      <!--SERVICIO 1-->
+      <div class="col-md-3 servicios" style="margin-left:56px">
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+
+            <!--FRENTE-->
+            <div class="front">
+              <img src="Imagenes/img_nature_wide.jpg" class="img-responsive center-block">
+              <h3 class="text-center">
+                SERVICIO 1
+              </h3>
+              <p class="light text-justify">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+            <!--END FRENTE-->
+
+            <!--BACK-->
+            <div class="back">
+                <p class="light text-justify">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+            </div>
+            <!-- END BACK -->
+
+          </div>
+        </div>
+        <!-- END SERVICIO 1-->
+
+      </div>
+      <!--SERVICIO 2-->
+      <div class="col-md-3 col-md-offset-1 ">
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+
+            <!--FRENTE-->
+            <div class="front">
+              <img src="Imagenes/img_fjords_wide.jpg" class="img-responsive center-block"></img>
+              <h3 class="espacio-a2 pa-2 text-center">
+                SERVICIO 2
+              </h3>
+              <p class="light text-justify">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+            <!--END FRENTE-->
+
+            <!--BACK-->
+            <div class="back">
+                <p class="light text-justify">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                   </div>
+            <!-- END BACK -->
+
+          </div>
+        </div>
+      </div>
+      <!-- END SERVICIO 2-->
+
+      <div class="col-md-3 col-md-offset-1 ">
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+          <div class="flipper">
+
+            <!--FRENTE-->
+            <div class="front">
+              <img src="Imagenes/img_mountains_wide.jpg" class="img-responsive center-block"></img>
+              <h3 class="text-center">
+                SERVICIO 3
+              </h3>
+              <p class="light  text-justify">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+            <!--END FRENTE-->
+
+            <!--BACK-->
+            <div class="back">
+                <p class="light text-justify">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+            </div>
+            <!-- END BACK -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GALERIA -->
+    <div class="row">
+      <div class="col-md-12 ContenedorFotos" id="Slides">
+
+        <div class="ImagenesSlide">
+          <img src="Imagenes/parallax.jpg">
+        </div>
+  
+        <div class="ImagenesSlide">
+          <img src="Imagenes/img_fjords_wide.jpg">
+        </div>
+  
+        <div class="ImagenesSlide ">
+          <img src="Imagenes/img_mountains_wide.jpg">
+        </div>
+ 
+        <div id="botonesPie" >
+          <span class="BotonPieFoto" id="botonPie1"></span>
+          <span class="BotonPieFoto" id="botonPie2"></span>
+          <span class="BotonPieFoto" id="botonPie3"></span>
+        </div>
+     
+      </div>
+    </div>
+    
+
+    <!-- --------------- -->
+
+
+    <!-- CASOS DE EXITO -->
+    <div class="row" id="CasosDeExito">
+      <div class="col-md-12">
+        <h1 class="text-center">
+          <span class="grueso"> RESEÑAS DE CLIENTES</span>
+        </h1>
+      </div>
+    </div>
+
+    <div id="chat" class="row">
+      <div class="row ">
+        </br>
+        <div class="col-md-4 col-md-offset-1 Burbujas BurbujaArribaIzquierda">
+          <div class="TituloReview">
+            <img src="Imagenes/boy.svg" class="FormatoImagenReview">
+            <h4>Juan Pedro</h4>
+          </div>
+          <br>
+          <br>
+          <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        <br>
+        <br>
+        <div class="col-md-4 col-md-offset-2 Burbujas BurbujaArribaDerecha">
+            <div class="TituloReview">
+                <img src="Imagenes/woman.svg" class="FormatoImagenReview">
+                <h4>Maria Elena</h4>
+              </div>
+          <br>
+          <br>
+          <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </div>
+    
+      <div class="row">
+        <div class="col-md-4 col-md-offset-2 Burbujas BurbujasDerecha">
+            <div class="TituloReview">
+                <img src="Imagenes/boy.svg" class="FormatoImagenReview">
+                <h4>Juan Pedro</h4>
+              </div>
+          <br>
+          <br>
+          <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        <br>
+        <br>
+        <div class="col-md-4 Burbujas BurbujasIzquierda" style="margin-left: 5%;">
+            <div class="TituloReview">
+                <img src="Imagenes/woman.svg" class="FormatoImagenReview">
+                <h4>Maria Elena</h4>
+              </div>
+          <br>
+          <br>
+          <p class="text-justify">
+    
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- "---------------------------------" -->
+
+
+
+
+
+
+    <!-- CASOS DE EXITO -->
+    <div class="row" id="PreguntasFrecuentes">
+      <div class="col-md-12">
+        <h1 class="text-center">
+          <span class="grueso"> PREGUNTAS FRECUENTES</span>
+        </h1>
+      </div>
+    </div>
+    <!-- "---------------------------------" -->
+
+
+    <!-- FAQ  -->
+    <div class="row" id="FAQ">
+      <div class="row accordion">
+        <div class="col-md-10 col-md-offset-1">
+          <p>¿Cuál es el horario de atención?</p>
+        </div>
+        <div class="col-md-1 ">
+          <img src="Imagenes/plus.svg" width="32px" height="32px">
+        </div>
+      </div>
+
+      <div class="panel row">
+        <div class="col-md-10 col-md-offset-1">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        
+          </p>
+        </div>
+        
+      </div>
+
+
+      <div class="row accordion">
+        <div class="col-md-offset-1 col-md-10">
+          <p>¿Donde se encuentra el local?</p>
+        </div>
+        <div class="col-md-1">
+          <img src="Imagenes/plus.svg" width="32px" height="32px">
+        </div>
+      </div>
+
+      <div class="panel row">
+        <div class="col-md-10 col-md-offset-1">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+         </p>
+        </div>
+      </div>
+
+
+      <div class="row accordion">
+        <div class="col-md-10 col-md-offset-1">
+          <p>¿Brindan soporte técnico?</p>
+        </div>
+        <div class="col-md-1">
+          <img src="Imagenes/plus.svg" width="32px" height="32px">
+        </div>
+      </div>
+
+      <div class="panel row">
+      <div class="col-md-10 col-md-offset-1">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+       </p>
+      </div>
+        
+      </div>
+    </div>
+    <!-- Contacto -->
+    <div class="row" id="Contacto">
+
+      <div class="row" id="titulosContacto">
+
+        <div class="col-md-4">
+          <h4 class="text-center">DIRECCIÓN</h4>
+        </div>
+
+        <div class="col-md-8">
+          <h4 class="text-center">COLUMNA DOS</h4>
+        </div>
+
+      </div>
+
+      <div class="row" id="contenidoContacto">
+
+        <div class="col-md-4">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.3565816030996!2d-56.16658868513852!3d-34.897499980384445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f81ab55918095%3A0x7a2f5fdec5c3e529!2sObelisco+a+los+Constituyentes+de+1830%2C+11600+Montevideo!5e0!3m2!1ses!2suy!4v1520437803397"
+            width="100%" height="300px" frameborder="0" allowfullscreen id="mapa"></iframe>
+        </div>
+
+        <div class="col-md-8">
+
+          <!-- Texto de columna dos -->
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+              <p class="text-center" id="textoColumnaDos"> 
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>    
+                
+              
+              </div>
+          </div>
+
+          <!-- Iconos de redes sociales -->
+          <div class="row" id="redesSociales">
+            <div class="col-md-2 col-md-offset-2">
+              <img src="Imagenes/facebookblanco.svg" alt="" class="redessociales img-responsive center-block" id="facebook"></img>
+            </div>
+            <div class="col-md-2">
+              <img src="Imagenes/twitterbanco.svg" alt="" class="redessociales img-responsive center-block" id="twitter"></img>
+            </div>
+            <div class="col-md-2">
+              <img src="Imagenes/instagramblanco.svg" alt="" class="redessociales img-responsive center-block" id="instagram"></img>
+            </div>
+            <div class="col-md-2">
+              <img src="Imagenes/google-plus.svg" alt="" class="redessociales img-responsive center-block" id="google-plus"></img>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="panel-footer" id="foot">
+      <div class="col-md-12">
+        <p class="text-center fino">© Copyright 2018</p>
+      </div>
+      <div class="col-md-12">
+        <p class="text-center">
+          <span class="grueso">Nombre empresa - </span>
+          <span class="fino">Departamento, Pais</span>
+        </p>
+      </div>
+    </div>
+    <!-- -------- -->
+
+  </div>
+</body>
+
+</html>
